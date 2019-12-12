@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : area
+Design : matvecmult
+Version: N-2017.09-SP2
+Date   : Thu Nov 21 11:48:11 2019
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                         1207
+Number of nets:                          2972
+Number of cells:                         1651
+Number of combinational cells:           1465
+Number of sequential cells:               153
+Number of macros/black boxes:               0
+Number of buf/inv:                        209
+Number of references:                      54
+
+Combinational area:              18318.341019
+Buf/Inv area:                      841.910387
+Noncombinational area:            5037.883209
+Macro/Black Box area:                0.000000
+Net Interconnect area:          186294.270599
+
+Total cell area:                 23356.224228
+Total area:                     209650.494828
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------------------
+matvecmult                        23356.2242    100.0   2799.0125  5037.8832  0.0000  matvecmult
+add_0_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_0
+add_0_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_7
+add_0_root_add_48_15                217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_15
+add_1_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_1
+add_1_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_8
+add_2_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_4
+add_2_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_11
+add_3_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_5
+add_3_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_12
+add_4_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_2
+add_4_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_9
+add_5_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_3
+add_5_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_10
+add_6_root_add_1_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_6
+add_6_root_add_2_root_add_48_15     217.2672      0.9    217.2672     0.0000  0.0000  matvecmult_DW01_add_13
+add_75                              127.3050      0.5    127.3050     0.0000  0.0000  matvecmult_DW01_inc_0
+add_76                              218.9646      0.9    218.9646     0.0000  0.0000  matvecmult_DW01_add_14
+mult_48                             743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_15
+mult_48_10                          743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_6
+mult_48_11                          743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_5
+mult_48_12                          743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_4
+mult_48_13                          743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_3
+mult_48_14                          743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_2
+mult_48_15                          762.1326      3.3    762.1326     0.0000  0.0000  matvecmult_DW_mult_uns_1
+mult_48_16                          743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_0
+mult_48_2                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_14
+mult_48_3                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_13
+mult_48_4                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_12
+mult_48_5                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_11
+mult_48_6                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_10
+mult_48_7                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_9
+mult_48_8                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_8
+mult_48_9                           743.4612      3.2    743.4612     0.0000  0.0000  matvecmult_DW_mult_uns_7
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------------------
+Total                                                  18318.3410  5037.8832  0.0000
+
+1

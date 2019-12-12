@@ -1,0 +1,66 @@
+######################################################
+
+#1
+
+	seq1: .asciiz "ACACACTA"
+	seq2: .asciiz "AGCACACA"
+	score: .word 0:81	#(len1 + 1) * (len2 + 1)
+	dir: .word 0:81
+
+
+.text
+	main:	
+		li $s0, 8		#seq 1 length
+		li $s1, 8		#seq 2 length
+		
+######################################################		
+#1 answer		
+#highest score: 17	
+#traceback result: 313333323	
+######################################################
+
+#2
+
+	seq1: .asciiz "CAAGAATGTCACAGGTCCAT"
+	seq2: .asciiz "CAGCATCACACTTA"
+	score: .word 0:315	#(len1 + 1) * (len2 + 1)
+	dir: .word 0:315
+
+
+.text
+	main:	
+		li $s0, 20		#seq 1 length
+		li $s1, 14		#seq 2 length
+		
+		
+######################################################		
+#2 answer		
+#highest score: 21	
+#traceback result: 3333333311333313
+######################################################
+
+#3
+
+    seq1: .asciiz "TGCCGAGGCGTCGAGAGACGATAATAGTAGCCAAGCACCTATGGGTCTCCATGTGGCTTTCTTCTCTTGAGTCGCGAGATTACTCTGTCATCAAGTGATCCGTGTAGATTCGCAGTCGAATCAGACGAGAATCCGAAGCTTGCGAAGAGGTTATTTTTAGATTTTGTTTGTTTTTCACATAGCACGGGATGAGGATGTTA"
+    seq2: .asciiz "TTTCTAACGCGGTTGACCCGCTACTTCAACTGTGATCCGCAAAATTAGTTACTTAATTACCTCGGAGACTTTTGTGGTCATACTGTAAGCGTGTGTCTAAATTTACTATGATCACGAGGCGACATGAAGTAGTTTCTCTTTTGATCCTGAACGTACATGAGCCTGTACCGACGAGCAGCCAACTTTGCTGTAAATGGGAT"
+    score: .word 0:40401
+    dir: .word 0:40401
+
+
+.text
+    main:
+        li $s0, 200
+        li $s1, 200
+
+#4
+
+    seq1: .asciiz "CCTGCAAGCC"
+    seq2: .asciiz "ACCTGCACAAATCAAGTTGCTGGGATTGAGCACCGGATGATGGGTCAATAAACCTATGCCAGACTCGATGGCGGGGCGCTGATGGAGCTA"
+    score: .word 0:1001
+    dir: .word 0:1001
+
+
+.text
+    main:
+        li $s0, 10
+        li $s1, 90

@@ -1,0 +1,10 @@
+    seq1: .asciiz "CCTGCAAGCC"
+    seq2: .asciiz "ACCTGCACAAATCAAGTTGCTGGGATTGAGCACCGGATGATGGGTCAATAAACCTATGCCAGACTCGATGGCGGGGCGCTGATGGAGCTA"
+    score: .word 0:1001
+    dir: .word 0:1001
+
+
+.text
+    main:
+        li $s0, 10
+        li $s1, 90

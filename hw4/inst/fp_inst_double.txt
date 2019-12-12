@@ -7,8 +7,8 @@
 200A0004 //0x18/  addi
 D54C001C //0x1C/  ldcl to fr12
 D40A0028 //0x20/  ldcl to fr10
-462A6040 //0x24/  add.d
+462A6100 //0x24/  add.d
 462A6081 //0x28/  sub.d
-F4010008 //0x2C/  sdcl
+F4040008 //0x2C/  sdcl
 F4020010 //0x30/  sdcl
 08000002 //0x34/  j

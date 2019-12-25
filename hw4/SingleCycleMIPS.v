@@ -136,8 +136,7 @@ module SingleCycleMIPS(
     assign jr_addr = Jr ? reg_bus_x : jump_addr;
     assign pc_w = jr_addr;
 
-    // PC output
-    assign IR_addr = pc_r;
+
 
 //==== sequential part =================================
     always @ (posedge clk or negedge rst_n) begin

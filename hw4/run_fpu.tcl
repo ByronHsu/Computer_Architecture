@@ -1,13 +1,13 @@
 # Import Design
-read_file ./FPSingleCycleMIPS.v
+read_file ./SingleCycleMIPS_FPU.v
 
-current_design [get_designs FPSingleCycleMIPS]
+current_design [get_designs SingleCycleMIPS_FPU]
 link
 
-source -echo -verbose ./FPSingleCycleMIPS.sdc
+source -echo -verbose ./SingleCycleMIPS_FPU.sdc
 
 # Compile Design
-current_design [get_designs FPSingleCycleMIPS]
+current_design [get_designs SingleCycleMIPS_FPU]
 
 set high_fanout_net_threshold 0
 
@@ -19,7 +19,7 @@ set_max_area 0
 compile
 
 # Output Design
-current_design [get_designs FPSingleCycleMIPS]
+current_design [get_designs SingleCycleMIPS_FPU]
 
 remove_unconnected_ports -blast_buses [get_cells -hierarchical *]
 
@@ -34,8 +34,8 @@ define_name_rules name_rule -case_insensitive
 change_names -hierarchy -rules name_rule
 
 # rename when you do FPU part!
-write_sdf -version 2.1 ./FPSingleCycleMIPS_syn.sdf
-write -hierarchy -format verilog -output ./FPSingleCycleMIPS_syn.v
-write -hierarchy -format ddc -output ./FPSingleCycleMIPS_syn.ddc                       
+write_sdf -version 2.1 ./SingleCycleMIPS_FPU_syn.sdf
+write -hierarchy -format verilog -output ./SingleCycleMIPS_FPU_syn.v
+write -hierarchy -format ddc -output ./SingleCycleMIPS_FPU_syn.ddc                       
 report_area -nosplit -hierarchy > ./area.txt
 report_timing > ./timing.txt

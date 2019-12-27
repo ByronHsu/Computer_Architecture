@@ -1,4 +1,4 @@
-set cycle  8      ;#clock period defined by designer
+set cycle  8.0      ;#clock period defined by designer
 
 ##########################################
 #  you cannot change the following parts

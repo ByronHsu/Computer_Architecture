@@ -1,3 +1,3 @@
-cycle time: 
-FPU Single:
-FPU Double:
+cycle time: 12.0
+FPU Single: Y
+FPU Double: Y

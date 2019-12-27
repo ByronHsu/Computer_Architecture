@@ -1,5 +1,5 @@
 `timescale 1 ns/10 ps
-`define CYCLE 200.0
+`define CYCLE 14.0
 `define SDFFILE     "./SingleCycleMIPS_syn.sdf"   // Modify your sdf file name
 `include "HSs18n_128x32.v"
 
@@ -196,4 +196,3 @@ module ROM128x32 (
 	always @(addr) data = mem[addr];
 	
 endmodule
-

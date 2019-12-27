@@ -10,7 +10,7 @@ module SingleCycleMIPS(
     Data2Mem,
     OEN
 );
- 
+
 //==== in/out declaration =================================
     //-------- processor ----------------------------------
     input         clk, rst_n;
@@ -920,9 +920,7 @@ module alu(
             4'b1111:begin
                 aug_out = sub_d_out;
             end
-            default:begin
-                aug_out = 1'b0;
-            end
+            default: aug_out = 64'b0;
         endcase
     end
 endmodule

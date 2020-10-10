@@ -42,11 +42,11 @@ ALU Table
 
 ## Performance
 
-cycle time: 14.0
-FPU Single: Y
-FPU Double: Y
+- cycle time: 14.0
+- FPU Single: Y
+- FPU Double: Y
 
 ## Author
 
-[ByronHsu](https://github.com/ByronHsu)
-[JoeyYang](https://github.com/joeyy5588)
+- [ByronHsu](https://github.com/ByronHsu)
+- [JoeyYang](https://github.com/joeyy5588)
